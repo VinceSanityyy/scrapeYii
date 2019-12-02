@@ -1,0 +1,16 @@
+2019/11/22 02:32:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\yii-master\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\yii-master\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-master\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-master\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-master\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-scrape2\protected\commands\Scrape99Command.php(19): CModule->__get('db')
+#5 C:\xampp\htdocs\yii-master\framework\console\CConsoleCommandRunner.php(70): Scrape99Command->init()
+#6 C:\xampp\htdocs\yii-master\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 C:\xampp\htdocs\yii-master\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#8 C:\xampp\htdocs\yii-master\framework\yiic.php(33): CApplication->run()
+#9 C:\xampp\htdocs\yii-scrape2\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-scrape2\protected\yiic(4): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+---
